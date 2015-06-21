@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Properties>
+    <Property name="log-path">./logFiles</Property>
+  </Properties>
+  <Appenders>
+    <RollingFile name="info" fileName="${log-path}/infoLog__${date:yyyy-MM-dd-hh_mm_ss}.log"
+                 filePattern="${log-path}/myexample-%d{yyyy-MM-dd}-%i.log">
+      <PatternLayout>
+        <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+      </PatternLayout>
+      <Policies>
+      </Policies>
+
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+
+    <Root level="all" >
+      <AppenderRef ref="info"/>
+    </Root>
+  </Loggers>
+</Configuration>

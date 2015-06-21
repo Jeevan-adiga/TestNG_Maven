@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <pathconvert property="test.classpath" pathsep=":" refid="classpath_jars"/>
+  <property name="project.dir" value="D:\Selenium\Workspace\TestNG_Maven"/>
+  <delete dir="${project.dir}/XSLT_Reports/output"></delete>
+  <mkdir dir="${project.dir}/XSLT_Reports/output"/>
+  <xslt in="test-output/testng-results.xml" style="./testng-results.xsl" processor="SaxonLiaison" out="${project.dir}/XSLT_Reports/output/index.html">
+    <param expression="${project.dir}/XSLT_Reports/output/" name="testNgXslt.outputDir"/>
+    <param expression="true" name="testNgXslt.showRuntimeTotals"/>
+    <param expression="true" name="testNgXslt.sortTestCaseLinks"/>
+    <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter"/>
+  </xslt>
+</target>
+</project>

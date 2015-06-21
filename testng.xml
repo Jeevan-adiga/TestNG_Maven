@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG_Maven" parallel="true">
+
+	<listeners>
+		<listener class-name="com.example.utils.CustomReporter" />
+		<listener class-name="com.example.utils.CustomListner" />
+	</listeners>
+
+	<test name="Test Cases" preserve-order="true">
+		<classes>
+			<class name="com.example.testCases.TestCase01" />
+		</classes>
+	</test>
+</suite> 

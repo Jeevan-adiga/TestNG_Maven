@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TmpSuite]">
+  <test name="TmpTest(failed)">
+    <classes>
+      <class name="com.example.testCases.TestCase01">
+        <methods>
+          <include name="setup"/>
+          <include name="testCase2"/>
+          <include name="testCase3"/>
+        </methods>
+      </class> <!-- com.example.testCases.TestCase01 -->
+    </classes>
+  </test> <!-- TmpTest(failed) -->
+</suite> <!-- Failed suite [TmpSuite] -->

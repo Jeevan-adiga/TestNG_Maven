@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="3" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[TestCase 1]]>
+    </line>
+    <line>
+      <![CDATA[testCase1--Test method success]]>
+    </line>
+    <line>
+      <![CDATA[TestCase2]]>
+    </line>
+    <line>
+      <![CDATA[testCase2--Test method failed]]>
+    </line>
+    <line>
+      <![CDATA[Assert Msg :Assert Failed Message]]>
+    </line>
+    <line>
+      <![CDATA[TestCase3]]>
+    </line>
+    <line>
+      <![CDATA[testCase3--Test method failed]]>
+    </line>
+    <line>
+      <![CDATA[Assert Msg :Assert Failed Message - TestCase 3]]>
+    </line>
+  </reporter-output>
+  <suite name="TmpSuite" duration-ms="1072" started-at="2015-06-21T11:20:46Z" finished-at="2015-06-21T11:20:47Z">
+    <groups>
+    </groups>
+    <test name="TmpTest" duration-ms="1072" started-at="2015-06-21T11:20:46Z" finished-at="2015-06-21T11:20:47Z">
+      <class name="com.example.testCases.TestCase01">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.example.testCases.TestCase01@7dae8359]" name="setup" is-config="true" duration-ms="8" started-at="2015-06-21T16:50:46Z" finished-at="2015-06-21T16:50:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.example.testCases.TestCase01@7dae8359]" name="testCase1" duration-ms="1047" started-at="2015-06-21T16:50:46Z" finished-at="2015-06-21T16:50:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase 1]]>
+            </line>
+            <line>
+              <![CDATA[testCase1--Test method success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.example.testCases.TestCase01@7dae8359]" name="testCase2" duration-ms="3" started-at="2015-06-21T16:50:47Z" finished-at="2015-06-21T16:50:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assert Failed Message]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assert Failed Message
+	at com.example.utils.CustomListner.onTestFailure(CustomListner.java:15)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1797)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1781)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:721)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at com.example.utils.Driver.main(Driver.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:293)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase2]]>
+            </line>
+            <line>
+              <![CDATA[testCase2--Test method failed]]>
+            </line>
+            <line>
+              <![CDATA[Assert Msg :Assert Failed Message]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="FAIL" signature="testCase3()[pri:0, instance:com.example.testCases.TestCase01@7dae8359]" name="testCase3" duration-ms="1" started-at="2015-06-21T16:50:47Z" finished-at="2015-06-21T16:50:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assert Failed Message - TestCase 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assert Failed Message - TestCase 3
+	at com.example.utils.CustomListner.onTestFailure(CustomListner.java:15)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1797)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1781)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:721)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at com.example.utils.Driver.main(Driver.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:293)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase3]]>
+            </line>
+            <line>
+              <![CDATA[testCase3--Test method failed]]>
+            </line>
+            <line>
+              <![CDATA[Assert Msg :Assert Failed Message - TestCase 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+      </class> <!-- com.example.testCases.TestCase01 -->
+    </test> <!-- TmpTest -->
+  </suite> <!-- TmpSuite -->
+</testng-results>

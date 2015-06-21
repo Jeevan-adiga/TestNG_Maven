@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.example.testCases.TestCase01
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.369 sec <<< FAILURE!
+testCase2(com.example.testCases.TestCase01)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: Assert Failed Message
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.example.testCases.TestCase01.testCase2(TestCase01.java:38)
+
+testCase3(com.example.testCases.TestCase01)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Assert Failed Message - TestCase 3
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.example.testCases.TestCase01.testCase3(TestCase01.java:47)
+
